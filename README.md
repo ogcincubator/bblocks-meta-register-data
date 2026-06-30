@@ -9,6 +9,15 @@ The compiled index is published at:
 https://w3id.org/ogc/bblocks/meta-register.json
 ```
 
+## Published artifacts
+
+| URL | Description |
+|---|---|
+| `https://w3id.org/ogc/bblocks/meta-register.json` | Flat alias map: `{ "@org/name": "https://..." }` |
+| `https://w3id.org/ogc/bblocks/meta-register-orgs.json` | Organisation metadata: name, description, URL, maintainers, register list |
+
+The `default` key in `meta-register.json` resolves to `@ogc/main` and is used by tooling that has not yet been configured with an explicit alias.
+
 ## How it works
 
 Each organisation or user claims a namespace by adding a directory under `registers/` with a
@@ -66,6 +75,7 @@ registers:
 | Field | Required | Description |
 |---|---|---|
 | `org.name` | yes | Full, human-readable organisation name |
+| `org.description` | no | Short description of the organisation |
 | `org.url` | yes | Publicly reachable URL for the organisation |
 | `org.maintainers` | yes | At least one maintainer with `github` username and `email` |
 | `registers` | yes | Map of register slugs to their `register.json` URLs (at least one) |
