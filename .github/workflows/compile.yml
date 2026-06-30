@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'registers/**'
-      - 'scripts/compile.py'
+      - '.github/scripts/compile.py'
       - 'index.html'
   workflow_dispatch:
 
@@ -28,9 +28,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      - run: pip install pyyaml
+      - run: pip install pyyaml jsonschema
 
-      - run: python scripts/compile.py
+      - run: python .github/scripts/compile.py
 
       - name: Stage Pages output
         run: |
