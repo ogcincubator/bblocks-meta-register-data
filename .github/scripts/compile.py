@@ -111,6 +111,9 @@ def main():
         print(f"OK: {len(index)} entries validated")
         return
 
+    if "@ogc/main" in index:
+        index = {"default": index["@ogc/main"], **index}
+
     out = cwd / "index.json"
     out.write_text(json.dumps(index, indent=2) + "\n")
     print(f"Wrote {len(index)} entries to {out}")
