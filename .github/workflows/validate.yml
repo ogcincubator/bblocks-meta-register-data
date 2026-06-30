@@ -5,6 +5,7 @@ on:
     paths:
       - 'registers/**'
       - '.github/scripts/compile.py'
+  workflow_dispatch:
 
 jobs:
   validate:

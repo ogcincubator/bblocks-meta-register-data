@@ -2,7 +2,7 @@ name: Compile and publish index
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - 'registers/**'
       - '.github/scripts/compile.py'
