@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile registers/*/registers.yaml into a flat index.json."""
+"""Compile registers/*/registers.yaml into index.json and orgs.json."""
 
 import argparse
 import json
@@ -20,6 +20,7 @@ REGISTERS_SCHEMA = {
             "additionalProperties": False,
             "properties": {
                 "name": {"type": "string", "minLength": 1},
+                "description": {"type": "string", "minLength": 1},
                 "url": {
                     "type": "string",
                     "pattern": r"^https?://",
@@ -56,8 +57,9 @@ REGISTERS_SCHEMA = {
 _validator = jsonschema.Draft7Validator(REGISTERS_SCHEMA)
 
 
-def compile_index(registers_root: Path) -> tuple[dict, list[str]]:
+def compile(registers_root: Path) -> tuple[dict, dict, list[str]]:
     index = {}
+    orgs = {}
     errors = []
 
     for registers_file in sorted(registers_root.glob("*/registers.yaml")):
@@ -82,7 +84,12 @@ def compile_index(registers_root: Path) -> tuple[dict, list[str]]:
                 continue
             index[key] = url
 
-    return index, errors
+        orgs[org] = {
+            **data["org"],
+            "registers": list(data["registers"].keys()),
+        }
+
+    return index, orgs, errors
 
 
 def main():
@@ -90,7 +97,7 @@ def main():
     parser.add_argument(
         "--validate",
         action="store_true",
-        help="Validate only — do not write index.json",
+        help="Validate only — do not write output files",
     )
     args = parser.parse_args()
 
@@ -100,7 +107,7 @@ def main():
         print(f"ERROR: registers directory not found at {root}", file=sys.stderr)
         sys.exit(1)
 
-    index, errors = compile_index(root)
+    index, orgs, errors = compile(root)
 
     if errors:
         for e in errors:
@@ -108,15 +115,17 @@ def main():
         sys.exit(1)
 
     if args.validate:
-        print(f"OK: {len(index)} entries validated")
+        print(f"OK: {len(index)} register entries, {len(orgs)} orgs validated")
         return
 
     if "@ogc/main" in index:
         index = {"default": index["@ogc/main"], **index}
 
-    out = cwd / "index.json"
-    out.write_text(json.dumps(index, indent=2) + "\n")
-    print(f"Wrote {len(index)} entries to {out}")
+    (cwd / "index.json").write_text(json.dumps(index, indent=2) + "\n")
+    print(f"Wrote {len(index)} entries to index.json")
+
+    (cwd / "orgs.json").write_text(json.dumps(orgs, indent=2) + "\n")
+    print(f"Wrote {len(orgs)} orgs to orgs.json")
 
 
 if __name__ == "__main__":

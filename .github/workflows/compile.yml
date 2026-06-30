@@ -35,7 +35,7 @@ jobs:
       - name: Stage Pages output
         run: |
           mkdir _site
-          cp index.json index.html _site/
+          cp index.json orgs.json index.html _site/
 
       - uses: actions/upload-pages-artifact@v3
         with:

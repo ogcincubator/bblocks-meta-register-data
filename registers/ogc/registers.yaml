@@ -1,5 +1,6 @@
 org:
   name: Open Geospatial Consortium
+  description: The Open Geospatial Consortium (OGC) is an international consortium of companies, government agencies, research organizations, and universities focused on developing publicly available geospatial standards
   url: https://www.ogc.org
   maintainers:
     - github: avillar
