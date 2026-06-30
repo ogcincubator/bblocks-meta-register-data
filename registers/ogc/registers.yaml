@@ -1,0 +1,47 @@
+org:
+  name: Open Geospatial Consortium
+  url: https://www.ogc.org
+  maintainers:
+    - github: avillar
+      email: avillar@ticnor.es
+
+registers:
+  # opengeospatial org
+  main: https://opengeospatial.github.io/bblocks/register.json
+  geopose: https://opengeospatial.github.io/geopose-bblocks/register.json
+  ogcapi-sosa: https://opengeospatial.github.io/ogcapi-sosa/register.json
+
+  # ogcincubator org
+  aim-swg: https://ogcincubator.github.io/aim-swg/register.json
+  incubator: https://ogcincubator.github.io/bblocks/register.json
+  prov-schema: https://ogcincubator.github.io/bblock-prov-schema/register.json
+  cwl: https://ogcincubator.github.io/bblocks-cwl/register.json
+  eoap-cct: https://ogcincubator.github.io/bblocks-eoap-cct/register.json
+  focal: https://ogcincubator.github.io/bblocks-focal/register.json
+  hydro: https://ogcincubator.github.io/bblocks-hydro/register.json
+  inspire-administrativeboundary: https://ogcincubator.github.io/bblocks-Inspire-AdministrativeBoundary/register.json
+  land-parcels: https://ogcincubator.github.io/bblocks-land-parcels/register.json
+  oas30-security: https://ogcincubator.github.io/bblocks-oas30-security/register.json
+  ogcapi-common: https://ogcincubator.github.io/bblocks-ogcapi-common/register.json
+  ogcapi-features: https://ogcincubator.github.io/bblocks-ogcapi-features/register.json
+  ogcapi-processes: https://ogcincubator.github.io/bblocks-ogcapi-processes/register.json
+  ogcapi-records: https://ogcincubator.github.io/bblocks-ogcapi-records/register.json
+  openscience: https://ogcincubator.github.io/bblocks-openscience/register.json
+  overturemaps: https://ogcincubator.github.io/bblocks-overturemaps/register.json
+  prez: https://ogcincubator.github.io/bblocks-prez/register.json
+  regression-tests: https://ogcincubator.github.io/bblocks-regression-tests/register.json
+  seadots: https://ogcincubator.github.io/bblocks-seadots/register.json
+  skos: https://ogcincubator.github.io/bblocks-skos/register.json
+  sta: https://ogcincubator.github.io/bblocks-sta/register.json
+  stac: https://ogcincubator.github.io/bblocks-stac/register.json
+  tutorial: https://ogcincubator.github.io/bblocks-tutorial/register.json
+  wf4ever: https://ogcincubator.github.io/bblocks-wf4ever/register.json
+  chek-profiles: https://ogcincubator.github.io/chek-profiles-bblocks/register.json
+  cross-domain-model: https://ogcincubator.github.io/cross-domain-model/register.json
+  geodcat-ogcapi-records: https://ogcincubator.github.io/geodcat-ogcapi-records/register.json
+  iliad-apis-features: https://ogcincubator.github.io/iliad-apis-features/register.json
+  modelcontextprotocol: https://ogcincubator.github.io/modelcontextprotocol/register.json
+  ogcapi-processes-standard: https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/register.json
+  prov-cwl: https://ogcincubator.github.io/prov-cwl/register.json
+  topo-feature: https://ogcincubator.github.io/topo-feature/register.json
+  usage-licensing: https://ogcincubator.github.io/usage-licensing/register.json
