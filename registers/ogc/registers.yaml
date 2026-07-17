@@ -33,7 +33,7 @@ registers:
   skos: https://ogcincubator.github.io/bblocks-skos/build/register.json
   sta: https://ogcincubator.github.io/bblocks-sta/build/register.json
   stac: https://ogcincubator.github.io/bblocks-stac/build/register.json
-  tutorial: https://ogcincubator.github.io/bblocks-tutorial/build/register.json
+  # tutorial: https://ogcincubator.github.io/bblocks-tutorial/build/register.json
   wf4ever: https://ogcincubator.github.io/bblocks-wf4ever/build/register.json
   chek-profiles: https://ogcincubator.github.io/chek-profiles-bblocks/build/register.json
   cross-domain-model: https://ogcincubator.github.io/cross-domain-model/build/register.json
