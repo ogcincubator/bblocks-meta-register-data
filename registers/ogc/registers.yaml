@@ -44,3 +44,6 @@ registers:
   prov-cwl: https://ogcincubator.github.io/prov-cwl/build/register.json
   topo-feature: https://ogcincubator.github.io/topo-feature/build/register.json
   usage-licensing: https://ogcincubator.github.io/usage-licensing/build/register.json
+  cc-profiles: https://ogcincubator.github.io/bblocks-cc-profiles/build/register.json
+  movingfeatures: https://ogcincubator.github.io/bblocks-movingfeatures/build/register.json
+  utility: https://ogcincubator.github.io/bblocks-utility/build/register.json
