@@ -23,6 +23,7 @@ registers:
   inspire-administrativeboundary: https://ogcincubator.github.io/bblocks-Inspire-AdministrativeBoundary/build/register.json
   land-parcels: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
   oas30-security: https://ogcincubator.github.io/bblocks-oas30-security/build/register.json
+  ogcapi-common: https://ogcincubator.github.io/bblocks-ogcapi-common/build/register.json
   ogcapi-features: https://ogcincubator.github.io/bblocks-ogcapi-features/build/register.json
   ogcapi-processes: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json
   ogcapi-records: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
