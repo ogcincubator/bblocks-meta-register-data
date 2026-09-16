@@ -20,7 +20,6 @@ registers:
   eoap-cct: https://ogcincubator.github.io/bblocks-eoap-cct/build/register.json
   focal: https://ogcincubator.github.io/bblocks-focal/build/register.json
   hydro: https://ogcincubator.github.io/bblocks-hydro/build/register.json
-  inspire-administrativeboundary: https://ogcincubator.github.io/bblocks-Inspire-AdministrativeBoundary/build/register.json
   land-parcels: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
   oas30-security: https://ogcincubator.github.io/bblocks-oas30-security/build/register.json
   ogcapi-common: https://ogcincubator.github.io/bblocks-ogcapi-common/build/register.json
