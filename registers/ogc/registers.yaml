@@ -41,7 +41,7 @@ registers:
   geodcat-ogcapi-records: https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json
   iliad-apis-features: https://ogcincubator.github.io/iliad-apis-features/build/register.json
   modelcontextprotocol: https://ogcincubator.github.io/modelcontextprotocol/build/register.json
-  ogcapi-processes-standard: https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/register.json
+  # ogcapi-processes-standard: https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/register.json
   prov-cwl: https://ogcincubator.github.io/prov-cwl/build/register.json
   topo-feature: https://ogcincubator.github.io/topo-feature/build/register.json
   usage-licensing: https://ogcincubator.github.io/usage-licensing/build/register.json
