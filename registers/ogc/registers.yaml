@@ -51,6 +51,6 @@ registers:
   aerial-survey: https://ogcincubator.github.io/bblocks-aerial-survey/build/register.json
   oas-security: https://ogcincubator.github.io/oas-security/build/register.json
   ro-crate: https://ogcincubator.github.io/bblocks-ro-crate/build/register.json
-  heritage: https://ogcincubator.github.io/bblocks-heritage/build/register.json
+  # heritage: https://ogcincubator.github.io/bblocks-heritage/build/register.json
   # bblocks-licensing NOT added: register.json 404s, GitHub Pages isn't enabled on
   # that repo yet (workflow is active, no Pages site configured) - add once fixed.
