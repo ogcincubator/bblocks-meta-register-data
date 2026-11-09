@@ -9,7 +9,7 @@ org:
 registers:
   # opengeospatial org
   main: https://opengeospatial.github.io/bblocks/register.json
-  geopose: https://opengeospatial.github.io/geopose-bblocks/build/register.json
+  geopose: https://opengeospatial.github.io/bblocks-geopose/build/register.json
   ogcapi-sosa: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   ontology-crs: https://opengeospatial.github.io/ontology-crs/build/register.json
 
